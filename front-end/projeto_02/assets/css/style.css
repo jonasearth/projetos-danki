@@ -163,7 +163,7 @@ section.chamada h2 {
 .item-2-mosaico {
     background-color: rgb(133, 133, 133);
     width: 40%;
-    padding: 60px;
+    padding: 40px;
 }
 .item-2-mosaico p {
     color: white;
@@ -217,6 +217,7 @@ footer .container {
     }
     .item-2-mosaico {
         width: 100%;
+        padding: 4%;
     }
     .flex-mosaico {
         display: block;
