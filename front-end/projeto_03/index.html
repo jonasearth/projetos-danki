@@ -10,6 +10,7 @@
         <meta charset="utf-8" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
+
         <meta name="author" content="Herbeti Jonas" />
         <meta
             name="viewport"
@@ -79,66 +80,173 @@
             <!--container-->
         </section>
         <!--sessao1-->
+
         <section class="sessao2">
             <div class="container">
                 <h2>Desenvolvido de pessoas para pessoas</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima voluptas consequatur asperiores incidunt dolores
-                    expedita obcaecati dicta ullam, enim excepturi, maiores
-                    mollitia inventore blanditiis. Laudantium nostrum maiores
-                    ipsa rerum expedita.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin sagittis, risus ut tempus condimentum, urna est
+                    volutpat augue, a placerat ligula magna tincidunt sapien. Ut
+                    tempus pulvinar ante, at euismod orci commodo suscipit. Nunc
+                    ut viverra dui. Ut efficitur cursus diam a volutpat. Sed
+                    sagittis pharetra dolor, ac mollis sapien condimentum vitae.
+                    Ut in interdum tortor.
                 </p>
-                <img src="./assets/images/mockup.jpg" alt="" />
+                <img src="./assets/images/mockup.jpg" />
             </div>
             <!--container-->
         </section>
         <!--sessao2-->
+
         <section class="sessao3">
             <div class="part1">
                 <div class="wraper-part1">
                     <h2>Nosso time</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Soluta quibusdam provident qui amet eum non iusto eius
-                        ab. Deserunt at atque vitae iste animi fugit in dolores
-                        officia, deleniti temporibus!
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin sagittis, risus ut tempus condimentum, urna est
+                        volutpat augue, a placerat ligula magna tincidunt
+                        sapien. Ut tempus pulvinar ante, at euismod orci commodo
+                        suscipit.
                     </p>
                 </div>
             </div>
+            <!--part1-->
 
             <div class="part2">
                 <div class="sobre-autor">
                     <div class="titulo-autor">
                         <div class="wraper-titulo-autor">
                             <h2>Herbeti Jonas</h2>
-                            <p>Co-Founder/Desenvolvedor</p>
+                            <p>Co-Founder / Desenvolvedor</p>
                         </div>
                         <!--wraper-titulo-autor-->
                         <div class="img-autor"></div>
-                        <!--img-autor-->
                     </div>
-                    <!--titulo-author-->
+                    <!--titulo-autor-->
                     <div class="texto-autor">
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Sunt officia in dicta omnis vel. Quod labore
-                            architecto accusantium nemo repellat. Quis vitae
-                            assumenda voluptate qui unde amet provident a
-                            deserunt!
+                            Proin sagittis, risus ut tempus condimentum, urna
+                            est volutpat augue, a placerat ligula magna
+                            tincidunt sapien. Ut tempus pulvinar ante, at
+                            euismod orci.
                         </p>
                     </div>
-                    <!--text-autor-->
+                    <!--texto-autor-->
                 </div>
                 <!--sobre-autor-->
                 <div class="slider-bullets">
-                    <span style="background-color: black;"></span>
+                    <span style="background-color: rgb(170, 170, 170);"></span>
                     <span></span>
                     <span></span>
                 </div>
                 <!--slider-bullets-->
             </div>
             <!--part2-->
+            <div class="clear"></div>
         </section>
+        <!--sessao3-->
+
+        <section class="sessao4">
+            <div class="container">
+                <div class="form">
+                    <h2>Entre em contato</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam scelerisque lobortis iaculis. In hac habitasse
+                        platea dictumst. Cras vitae purus metus.
+                    </p>
+
+                    <form>
+                        <input type="text" name="nome" placeholder="Nome*" />
+                        <input type="text" name="email" placeholder="E-mail*" />
+                        <textarea
+                            name="mensagem"
+                            placeholder="Mensagem*"
+                        ></textarea>
+                        <div class="clear"></div>
+                        <div><input type="submit" value="Enviar" /></div>
+                    </form>
+                </div>
+                <!--form-->
+
+                <div class="map-wraper">
+                    <h2>Faça uma visita</h2>
+                    <div class="map-wraper3">
+                        <div class="map-wraper2">
+                            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCx8sh_HlLuleKqI2-ujHXj3P4jZfhnSUQ"></script>
+                            <div class="map" id="gmap_canvas"></div>
+                            <style>
+                                #gmap_canvas img {
+                                    max-width: none !important;
+                                    background: none !important;
+                                }
+                            </style>
+                            <a href="http://maps-generator.com/pt"
+                                >maps-generator.com</a
+                            >
+                            <script type="text/javascript">
+                                function init_map() {
+                                    var myOptions = {
+                                        zoom: 15,
+                                        center: new google.maps.LatLng(
+                                            -11.960943,
+                                            -38.972429
+                                        ),
+                                        mapTypeId:
+                                            google.maps.MapTypeId.ROADMAP,
+                                    };
+                                    map = new google.maps.Map(
+                                        document.getElementById("gmap_canvas"),
+                                        myOptions
+                                    );
+                                    marker = new google.maps.Marker({
+                                        map: map,
+                                        position: new google.maps.LatLng(
+                                            -11.960943,
+                                            -38.972429
+                                        ),
+                                    });
+                                    infowindow = new google.maps.InfoWindow({
+                                        content:
+                                            '<p style="color:black;text-align:left;font-weight:bold;">Minha residencia</p><p style="color:black;text-align:left;">Rua Jaime Azevedo 74</p><br>',
+                                    });
+                                    google.maps.event.addListener(
+                                        marker,
+                                        "click",
+                                        function () {
+                                            infowindow.open(map, marker);
+                                        }
+                                    );
+                                    infowindow.open(map, marker);
+                                }
+                                google.maps.event.addDomListener(
+                                    window,
+                                    "load",
+                                    init_map
+                                );
+                            </script>
+                        </div>
+                        <!--map-wraper2-->
+                    </div>
+                    <!--map-wraper-3-->
+                </div>
+                <!--map-wraper-->
+
+                <div class="clear"></div>
+            </div>
+            <!--container-->
+        </section>
+        <!--sessao4-->
+
+        <footer>
+            <div class="container">
+                <p>Todos os direitos reservados</p>
+                <p>contato@dankicode.com</p>
+                <div class="clear"></div>
+            </div>
+            <!--container-->
+        </footer>
     </body>
 </html>
